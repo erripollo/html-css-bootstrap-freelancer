@@ -4,6 +4,10 @@
     background-color: #2c3e50;
 }
 
+.bg_gray{
+    background-color: #3a546e;
+}
+
 .bg_green{
     background-color: #1bbc9d;
 }
@@ -39,7 +43,7 @@
     height: 200px;
 }
 
-.about_text{
+.about_text, .footer_text{
     height: 150px;
 }
 
