@@ -26,7 +26,26 @@
 }
 
 .jumbotron_text {
-    width: 350px;
+    width: 400px;
     height: 150px;
 }
+
+.title{
+    width: 300px;
+    height: 80px;
+}
+
+.picture{
+    height: 200px;
+}
+
+.about_text{
+    height: 150px;
+}
+
+.form{
+    height: 300px;
+}
+
+
 
