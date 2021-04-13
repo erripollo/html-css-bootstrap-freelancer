@@ -18,16 +18,31 @@
 <body>
     
     <!-- Site Header -->
-    <header>
-        <div class="logo"></div>
-        <nav></nav>
+    <header id="site_header" class="bg_darkgray">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-8 col-md-4 p-1">
+                    <div class="logo w-100 bg-secondary opacity_4"></div>
+                </div>
+                <div class="col-4 col-md-8 p-1">
+                    <nav class="w-100 bg-secondary opacity_4">
+                    </nav>
+                </div>
+            </div>
+        </div>
+            
     </header>
     <!-- /Site Header -->
 
     <!-- Site Main -->
-    <main>
+    <main id="site_main">
+
         <!-- Jumbotron -->
-        <div class="jumbotron"></div>
+        <div class="jumbotron bg_green d-flex flex-column align-items-center">
+            <div class="profile_img bg-secondary opacity_4 rounded-circle mb-2"></div>
+            <div class="jumbotron_text bg-secondary opacity_4"></div>
+        </div>
         <!-- /Jumbotron -->
 
         <!-- Portfolio -->
@@ -46,7 +61,7 @@
     <!-- /Site Main -->
 
     <!-- Site Footer -->
-    <footer>
+    <footer id="site_footer">
         <div class="footer_info"></div>
         <div class="footer_copyright"></div>
     </footer>
