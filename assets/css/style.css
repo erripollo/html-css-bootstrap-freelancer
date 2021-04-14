@@ -2,13 +2,17 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Utility css */
+h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
 
-.bg_darkgray{
+/* Utility css */
+.bg_darkblue{
     background-color: #2c3e50;
 }
 
-.bg_gray{
+.bg_blue{
     background-color: #3a546e;
 }
 
@@ -16,10 +20,30 @@ body{
     background-color: #1bbc9d;
 }
 
-.opacity_4{
-    opacity: 0.4;
+.rounded_10{
+    border-radius: 10px;
 }
 
+.star{
+    font-size: 1.8rem;
+}
+.star::before, 
+.star::after{
+    content: "";
+    width: 150px;
+    height: 4px;
+    border-radius: 2px;
+    display: inline-block;
+    margin: 8px 40px;
+}
+.star_darkblue::before,
+.star_darkblue::after{
+    background-color: #2c3e50;
+}
+.star_white::before, 
+.star_white::after{
+    background-color: white;
+}
 
 
 /* Site Header */
@@ -36,27 +60,10 @@ body{
     width: 200px;
 }
 
-.jumbotron .star{
-    font-size: 1.8rem;
-}
-.jumbotron .star::before{
-    content: "";
-    width: 150px;
-    height: 4px;
-    border-radius: 2px;
-    display: inline-block;
-    background-color: white;
-    margin: 8px 40px;
-}
-.jumbotron .star::after{
-    content: "";
-    width: 150px;
-    height: 4px;
-    border-radius: 2px;
-    display: inline-block;
-    background-color: white;
-    margin: 8px 40px;
-}
+
+
+
+
 
 
 .title{
@@ -64,9 +71,6 @@ body{
     height: 80px;
 }
 
-.picture{
-    height: 200px;
-}
 
 .about_text, .footer_text{
     height: 150px;
@@ -77,6 +81,10 @@ body{
 }
 
 @media screen and (max-width: 768px){
+    h2{
+        font-size: 1.8rem;
+    }
+
     .navbar-brand{
         font-size: 1rem;
     }
@@ -85,12 +93,10 @@ body{
         font-size: 2rem;
     }
 
-    .jumbotron .star::before{
+    .star::before, 
+    .star::after{
         width: 15%;
         margin-right: 6px;
-    }
-    .jumbotron .star::after{
-        width: 15%;
         margin-left: 6px;
     }
 }
