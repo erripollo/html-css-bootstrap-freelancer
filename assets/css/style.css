@@ -8,6 +8,10 @@ h2{
     font-weight: 500;
 }
 
+h3{
+    font-size: 1.5rem;
+}
+
 /* Utility css */
 .bg_darkblue{
     background-color: #2c3e50;
@@ -21,8 +25,20 @@ h2{
     background-color: #1bbc9d;
 }
 
+.text_green{
+    color: #1bbc9d;
+}
+
 .rounded_10{
     border-radius: 10px;
+}
+
+.btn_circle{
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
 }
 
 .star{
@@ -45,7 +61,6 @@ h2{
 .star_white::after{
     background-color: white;
 }
-
 
 /* Site Header */
 .navbar-brand{
@@ -70,8 +85,6 @@ h2{
     border-bottom: 1px solid #cccccc;
     border-radius: 0;
 }
-
-
 .form-control::-webkit-input-placeholder {
     color: #2c3e50;
   }
@@ -80,27 +93,24 @@ h2{
     color: #2c3e50;
 }
 
-
-
-
-
-
-
-
-
-.title{
-    width: 300px;
-    height: 80px;
+/* Footer css */
+#site_footer{
+    font-size: 1.2rem;
 }
 
+.text_green:hover{
+    color: #2c3e50;
+}
 
-.about_text, .footer_text{
-    height: 150px;
+.footer_copyright{
+    font-size: 0.9rem;
 }
 
 
 
-@media screen and (max-width: 768px){
+/* Media Query */
+
+@media screen and (max-width: 767px){
     h2{
         font-size: 1.8rem;
     }
@@ -120,6 +130,30 @@ h2{
         margin-left: 6px;
     }
 }
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    h3{
+        font-size: 1rem;
+    }
+
+    #site_footer{
+        font-size: 0.9rem;
+    }
+
+    .btn_circle{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+    }
+    #site_footer .btn-lg{
+        padding: .25rem .5rem;
+        font-size: .875rem;
+        line-height: 1.5;
+    }
+    
+}
+
+
 
 
 

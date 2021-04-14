@@ -34,13 +34,13 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
                   <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+                      <a class="nav-link" href="#portfolio">Portfolio <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                       </li>
                   </ul>
                 </div>
@@ -54,7 +54,7 @@
     <main id="site_main">
 
         <!-- Jumbotron -->
-        <div class="jumbotron rounded-0 bg_green">
+        <div id="jumbo" class="jumbotron rounded-0 bg_green">
             <div class="container text-center text-uppercase text-white">
                 <img class="mb-1" src="./assets/img/avatar.svg" alt="img profile avatar">
                 <h1 class="display-4">Start Bootstrap</h1>
@@ -65,7 +65,7 @@
         <!-- /Jumbotron -->
 
         <!-- Portfolio -->
-        <div class="portfolio py-4">
+        <div id="portfolio" class="py-4">
             <div class="container">
 
                 <div class="row mb-3">
@@ -101,7 +101,7 @@
         <!-- /Portfolio -->
 
         <!-- About -->
-        <div class="about bg_green text-white py-5">
+        <div id="about" class="bg_green text-white py-5">
             <div class="container">
 
                 <div class="row mb-3">
@@ -131,7 +131,7 @@
         <!-- /About -->
 
         <!-- Contact Me -->
-        <div class="contact_me py-5">
+        <div id="contact" class="contact_me py-5">
             <div class="container">
 
                 <div class="row mb-3">
@@ -175,31 +175,56 @@
     <!-- Site Footer -->
     <footer id="site_footer">
 
-        <div class="footer_info bg_gray p-3">
+        <div class="footer_info bg_blue text-white text-center pt-5">
             <div class="container">
+
                 <div class="row row-cols-1 row-cols-md-3">
-                    <div class="col mb-3">
-                        <div class="footer_text w-100 bg-secondary opacity_4"></div>
+                    <div class="col mb-5">
+                        <h3 class="text-uppercase">
+                            Location
+                        </h3>
+                        <div>2215 John Daniel Drive Clark, MO 54243</div>
                     </div>
-                    <div class="col mb-3">
-                        <div class="footer_text w-100 bg-secondary opacity_4"></div>
+
+                    <div class="col mb-5">
+                        <h3 class="text-uppercase">
+                            Around the web
+                        </h3>
+                        <button type="button" class="btn btn-outline-light btn-lg btn_circle mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-light btn-lg btn_circle mx-1">
+                            <i class="fab fa-google-plus-g"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-light btn-lg btn_circle mx-1">
+                            <i class="fab fa-twitter"></i>
+                        </button>
+                        <button type="button" class="btn btn-outline-light btn-lg btn_circle mx-1">
+                            <i class="fab fa-linkedin-in"></i>
+                        </button>
                     </div>
-                    <div class="col mb-3">
-                        <div class="footer_text w-100 bg-secondary opacity_4"></div>
+
+                    <div class="col mb-5">
+                        <h3 class="text-uppercase">
+                            About freelancer
+                        </h3>
+                        <div>Freelance is a free to use, open source Bootstrap theme create by 
+                            <a href="#" class="text_green">Start Bootstrap</a>.
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
 
-        <div class="footer_copyright bg_darkgray py-3">
+        <div class="footer_copyright bg_darkblue text-center text-white py-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 d-flex justify-content-center">
-                        <div class="title bg-secondary opacity_4">
-
-                        </div>
+                    <div class="col">
+                        Copyright &copy; Your Website 2019
                     </div>
                 </div>
+    
             </div>
         </div>
     </footer>
