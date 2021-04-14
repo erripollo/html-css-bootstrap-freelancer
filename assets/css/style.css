@@ -77,17 +77,21 @@ body{
 }
 
 @media screen and (max-width: 768px){
+    .navbar-brand{
+        font-size: 1rem;
+    }
+
     .display-4{
         font-size: 2rem;
     }
 
     .jumbotron .star::before{
-        width: 80px;
-        margin-right: 5px;
+        width: 15%;
+        margin-right: 6px;
     }
     .jumbotron .star::after{
-        width: 80px;
-        margin-left: 5px;
+        width: 15%;
+        margin-left: 6px;
     }
 }
 
