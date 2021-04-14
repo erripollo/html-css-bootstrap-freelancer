@@ -61,6 +61,27 @@ h2{
     width: 200px;
 }
 
+.form-control{
+    color: #2c3e50;
+    font-size: 1.3rem;
+    padding-bottom: 2rem;
+    padding-left: 0;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 0;
+}
+
+
+.form-control::-webkit-input-placeholder {
+    color: #2c3e50;
+  }
+
+.form-control::-moz-placeholder{
+    color: #2c3e50;
+}
+
+
+
 
 
 
@@ -77,9 +98,7 @@ h2{
     height: 150px;
 }
 
-.form{
-    height: 300px;
-}
+
 
 @media screen and (max-width: 768px){
     h2{
